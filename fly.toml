@@ -1,0 +1,16 @@
+# fly.toml file generated for ifly-hole on 2022-09-05T22:45:48-05:00
+
+app = "ifly-hole"
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[mounts]
+source="pihole_data"
+destination="/mnt/data"
+
+[env]
+
+[experimental]
+  allowed_public_ports = []
+  auto_rollback = true
